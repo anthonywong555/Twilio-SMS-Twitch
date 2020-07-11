@@ -47,10 +47,9 @@ Take the note of Twilio Serverless Domain.
 | TWILIO_SYNC_API_KEY     | SKXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX |
 | TWILIO_SYNC_API_SECRET  | XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX   |
 
-
 ### Edit Code
 
-1. Lastly, we need to modify the following lines of code:
+1. We need to modify the following lines of code:
 
 | File Name                                | Line | Value                                       |
 |------------------------------------------|------|---------------------------------------------|
@@ -61,6 +60,15 @@ After all the changes we want to redeploy this project. Execute the following co
 
 ```sh
 twilio serverless:deploy
+```
+
+### Modify Twilio Phone
+
+1. The last thing we need to do is modify the [Twilio Phone Number](https://www.twilio.com/console/phone-numbers/incoming) Settings. 
+
+2. Under *A MESSAGE COMES IN* set the value to be 
+```
+https://<<INSERT TWILIO SERVERLESS DOMAIN>>/livestream/handleSMS
 ```
 
 ## Setup OBS
