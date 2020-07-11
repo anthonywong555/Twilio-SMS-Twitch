@@ -9,8 +9,9 @@ Before you can get started you will need the following:
 - [Twilio Project](https://www.twilio.com/try-twilio)
 - [Twilio CLI](https://github.com/twilio/twilio-cli)
 - [Twilio CLI Plugin: Serverless](https://github.com/twilio-labs/plugin-serverless)
+- [OBS](https://obsproject.com/)
 
-## Setup
+## Setup Twilio
 
 ### Buy a Twilio Phone Number.
 
@@ -53,8 +54,20 @@ Lastly we just need to modify a few things.
 | ./twilio/assets/index.html               | 13   | ``` <<INSERT TWILIO PHONE NUMBER>> ```      |
 | ./twilio/assets/scripts/twilio-script.js | 21   | ``` <<INSERT TWILIO SERVERLESS DOMAIN>> ``` |
 
-After all the changes we want to redeploy this project. Execute the following commands in the ./twilio/serverless:
+After all the changes we want to redeploy this project. Execute the following command in the terminal:
 
 ```sh
 twilio serverless:deploy
 ```
+
+## Setup OBS
+
+![](./assets/setup-obs.gif)
+
+1. Launch OBS
+2. Add a Source -> Browser Source
+3. In URL field add the following value: 
+```
+https://<<INSERT TWILIO SERVERLESS DOMAIN>>/index.html
+```
+4. Click OK
