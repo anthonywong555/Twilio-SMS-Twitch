@@ -1,5 +1,7 @@
 # Twilio-SMS-Twitch
 
+![](./assets/demo.gif)
+
 ## Prerequisite
 
 Before you can get started you will need the following:
