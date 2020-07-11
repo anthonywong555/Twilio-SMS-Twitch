@@ -24,11 +24,12 @@ const loadServerlessModules = async () => {
 
 const driver = async (serverlessContext, serverlessEvent, twilioClient) => {
   try {
-    const {TWILIO_SYNC_SERVICE_SID, TWILIO_SYNC_LIST_UNIQUE_NAME} = serverlessContext;
+    const {TWILIO_SYNC_SERVICE_SID} = serverlessContext;
     const {Body} = serverlessEvent;
     const payload = {
       message: Body
     }
+    const TWILIO_SYNC_LIST_UNIQUE_NAME = "MESSAGES";
     const confirmationMessage = "Your message was received";
     await insertListItem(serverlessContext, twilioClient, TWILIO_SYNC_SERVICE_SID, TWILIO_SYNC_LIST_UNIQUE_NAME, payload);
     const result = generateSMSTwiml(confirmationMessage);
