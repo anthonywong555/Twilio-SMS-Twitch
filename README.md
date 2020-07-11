@@ -1,4 +1,4 @@
-# Twilio-SMS-Twitch
+# Twilio-SMS-Livestream
 
 ![](./assets/demo.gif)
 
