@@ -37,15 +37,9 @@ Take the note of Twilio Serverless Domain.
 
 ### Setup Environment Variables
 
-1. Create a .env in the ./twilio/serverless
+1. Rename .env.example to be .env
 
-2. Add the following key value pairing in the .env
-
-| Key                     | Value                              |
-|-------------------------|------------------------------------|
-| TWILIO_SYNC_SERVICE_SID | ISXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX |
-| TWILIO_SYNC_API_KEY     | SKXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX |
-| TWILIO_SYNC_API_SECRET  | XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX   |
+2. Replace the `XXX` placeholders with credentials.
 
 ### Edit Code
 
@@ -62,7 +56,7 @@ After all the changes we want to redeploy this project. Execute the following co
 twilio serverless:deploy
 ```
 
-### Modify Twilio Phone
+### Modify Twilio Phone Number
 
 1. The last thing we need to do is modify the [Twilio Phone Number](https://www.twilio.com/console/phone-numbers/incoming) Settings. 
 
