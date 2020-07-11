@@ -29,7 +29,7 @@ Before you can get started you will need the following:
 In terminal navigate to the folder ./twilio/serverless and execute the following commands.
 
 ```sh
-
+foo@bar: 
 ```
 
 Take the note of Twilio Serverless Domain.
@@ -54,5 +54,5 @@ Modify the following lines of code:
 After all the changes we want to redeploy this project. Execute the following commands in the ./twilio/serverless:
 
 ```sh
-twilio serverless:deploy
+foo@bar: twilio serverless:deploy
 ```
