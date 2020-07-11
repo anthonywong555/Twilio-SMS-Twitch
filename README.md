@@ -79,5 +79,5 @@ https://<<INSERT TWILIO SERVERLESS DOMAIN>>/index.html
 
 If you want to set this as your webcam, you will need to install a OBS Virutal Camera Plugin.
 
-[OBS Virtual Camera - macOS](https://github.com/johnboiles/obs-mac-virtualcam)
-[OBS Virtual Camera - Windows](https://github.com/CatxFish/obs-virtual-cam)
+- [OBS Virtual Camera - macOS](https://github.com/johnboiles/obs-mac-virtualcam)
+- [OBS Virtual Camera - Windows](https://github.com/CatxFish/obs-virtual-cam)
