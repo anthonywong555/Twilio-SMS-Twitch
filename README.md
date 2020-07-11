@@ -35,11 +35,11 @@ twilio serverless:deploy
 
 Take the note of Twilio Serverless Domain.
 
-### Edits
+### Setup Environment Variables
 
-Lastly we just need to modify a few things.
+1. Create a .env in the ./twilio/serverless
 
-1. In ./twilio/serverless add the following values in the .env
+2. Add the following key value pairing in the .env
 
 | Key                     | Value                              |
 |-------------------------|------------------------------------|
@@ -47,7 +47,10 @@ Lastly we just need to modify a few things.
 | TWILIO_SYNC_API_KEY     | SKXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX |
 | TWILIO_SYNC_API_SECRET  | XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX   |
 
-2. Modify the following lines of code:
+
+### Edit Code
+
+1. Lastly, we need to modify the following lines of code:
 
 | File Name                                | Line | Value                                       |
 |------------------------------------------|------|---------------------------------------------|
@@ -71,3 +74,10 @@ twilio serverless:deploy
 https://<<INSERT TWILIO SERVERLESS DOMAIN>>/index.html
 ```
 4. Click OK
+
+### Setup Zoom
+
+If you want to set this as your webcam, you will need to install a OBS Virutal Camera Plugin.
+
+[OBS Virtual Camera - macOS](https://github.com/johnboiles/obs-mac-virtualcam)
+[OBS Virtual Camera - Windows](https://github.com/CatxFish/obs-virtual-cam)
