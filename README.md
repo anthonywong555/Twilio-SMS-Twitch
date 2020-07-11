@@ -29,14 +29,16 @@ Before you can get started you will need the following:
 In terminal navigate to the folder ./twilio/serverless and execute the following commands.
 
 ```sh
-foo@bar: 
+twilio serverless:deploy
 ```
 
 Take the note of Twilio Serverless Domain.
 
 ### Edits
 
-In ./twilio/serverless add the following values in the .env
+Lastly we just need to modify a few things.
+
+1. In ./twilio/serverless add the following values in the .env
 
 | Key                     | Value                              |
 |-------------------------|------------------------------------|
@@ -44,7 +46,7 @@ In ./twilio/serverless add the following values in the .env
 | TWILIO_SYNC_API_KEY     | SKXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX |
 | TWILIO_SYNC_API_SECRET  | XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX   |
 
-Modify the following lines of code:
+2. Modify the following lines of code:
 
 | File Name                                | Line | Value                                       |
 |------------------------------------------|------|---------------------------------------------|
@@ -54,5 +56,5 @@ Modify the following lines of code:
 After all the changes we want to redeploy this project. Execute the following commands in the ./twilio/serverless:
 
 ```sh
-foo@bar: twilio serverless:deploy
+twilio serverless:deploy
 ```
