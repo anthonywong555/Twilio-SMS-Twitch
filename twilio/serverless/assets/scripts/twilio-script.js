@@ -18,7 +18,7 @@ const driver = async (event) => {
 
 const getTwilioAuth = async () => {
   try {
-    const tokenResponse = await $.getJSON('https://<<INSERT TWILIO SERVERLESS DOMAIN>>.twil.io/twilio/sync/get-sync-token');
+    const tokenResponse = await $.getJSON('https://<<INSERT TWILIO SERVERLESS DOMAIN>>/twilio/sync/get-sync-token');
     return tokenResponse;
   } catch (e) {
     throw e;

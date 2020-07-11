@@ -20,3 +20,10 @@ In ./twilio/serverless add the following values in the .env
 | TWILIO_SYNC_SERVICE_SID | ISXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX |
 | TWILIO_SYNC_API_KEY     | SKXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX |
 | TWILIO_SYNC_API_SECRET  | XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX   |
+
+Modify the following lines of code:
+
+| File Name                                | Line | Value                                       |
+|------------------------------------------|------|---------------------------------------------|
+| ./twilio/assets/index.html               | 13   | ``` <<INSERT TWILIO PHONE NUMBER>> ```      |
+| ./twilio/assets/scripts/twilio-script.js | 21   | ``` <<INSERT TWILIO SERVERLESS DOMAIN>> ``` |
