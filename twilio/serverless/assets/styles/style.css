@@ -1,0 +1,38 @@
+#phoneNumber {
+    color: #ccc;
+    font-size: 30px;
+}
+
+#chat {
+    width: auto;
+    height: auto;
+    color: #000;
+    text-shadow: -0.3px 0 0 rgba(255, 255, 255, 0.8), 0.3px 0 0 rgba(255, 255, 255, 0.8), 0 -0.3px 0 rgba(255, 255, 255, 0.8), 0 0.3px 0 rgba(255, 255, 255, 0.8);
+}
+
+#chat .popup {
+    position: absolute;
+    top: 50vh;
+    right: -50px;
+    width: auto;
+    text-align: center;
+    will-change: transform;
+    opacity: 0;
+    animation: popup 2.5s ease-in;
+    animation: popup 7s 1 linear;
+}
+
+@keyframes popup {
+    0% {
+        transform: translateX(0px) scale(0);
+        opacity: 0;
+    }
+    10% {
+        transform: scale(1);
+        opacity: 1;
+    }
+    100% {
+        transform: translateX(-2000px);
+        opacity: 1;
+    }
+}
