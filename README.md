@@ -25,6 +25,12 @@ Before you can get started you will need the following:
 
 - [Twilio Sync API Key](https://www.twilio.com/console/sync/project/api-keys)
 
+### Setup Environment Variables
+
+1. Rename .env.example to be .env
+
+2. Replace the `XXX` placeholders with credentials.
+
 ### Deploy Twilio Serverless Code
 
 In terminal navigate to the folder ./twilio/serverless and execute the following commands.
@@ -34,12 +40,6 @@ twilio serverless:deploy
 ```
 
 Take the note of Twilio Serverless Domain.
-
-### Setup Environment Variables
-
-1. Rename .env.example to be .env
-
-2. Replace the `XXX` placeholders with credentials.
 
 ### Edit Code
 
